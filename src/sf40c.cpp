@@ -188,7 +188,7 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 
-	// initScanRev(&scanRev, rosScanData, frameId);
+	initScanRev(&scanRev, rosScanData, frameId);
 	
 	if (driverScanStart(serial) != 0) {
 		RCLCPP_ERROR(node->get_logger(), "Failed to start scan");
